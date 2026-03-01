@@ -7,6 +7,9 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --border-glass: rgba(255, 255, 255, 0.1);
+  --element-bg: rgba(255, 255, 255, 0.1);
+  --element-hover: rgba(255, 255, 255, 0.2);
+  --element-active: rgba(255, 255, 255, 0.05);
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -29,6 +32,9 @@
   --text-main: #0f172a;
   --text-muted: #475569;
   --border-glass: rgba(0, 0, 0, 0.1);
+  --element-bg: rgba(0, 0, 0, 0.03);
+  --element-hover: rgba(0, 0, 0, 0.08);
+  --element-active: rgba(0, 0, 0, 0.12);
   color-scheme: light;
 }
 

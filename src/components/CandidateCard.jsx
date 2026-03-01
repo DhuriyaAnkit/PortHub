@@ -52,7 +52,7 @@ export default function CandidateCard({ candidate, isShortlisted, onToggleShortl
           <span 
             key={skill}
             style={{ 
-              background: 'rgba(255, 255, 255, 0.05)', 
+              background: 'var(--element-bg)', 
               padding: '0.2rem 0.6rem', 
               borderRadius: '999px',
               fontSize: '0.75rem',

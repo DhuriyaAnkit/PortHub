@@ -20,18 +20,18 @@ export default function Button({ children, type = 'button', variant = 'primary',
         gap: '8px',
         border: 'none',
         background: isPrimary 
-          ? 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' 
-          : 'rgba(255, 255, 255, 0.05)',
-        color: isPrimary ? '#ffffff' : 'var(--text-primary)',
+          ? 'linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%)' 
+          : 'var(--element-bg)',
+        color: isPrimary ? '#ffffff' : 'var(--text-main)',
         marginTop: '12px',
         ...style
       }}
       onMouseEnter={(e) => {
         if (isPrimary) {
           e.currentTarget.style.transform = 'translateY(-2px)';
-          e.currentTarget.style.boxShadow = '0 8px 20px -6px rgba(59, 130, 246, 0.5)';
+          e.currentTarget.style.boxShadow = '0 8px 20px -6px var(--primary)';
         } else {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+          e.currentTarget.style.background = 'var(--element-hover)';
         }
       }}
       onMouseLeave={(e) => {
@@ -39,7 +39,7 @@ export default function Button({ children, type = 'button', variant = 'primary',
           e.currentTarget.style.transform = 'translateY(0)';
           e.currentTarget.style.boxShadow = 'none';
         } else {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+          e.currentTarget.style.background = 'var(--element-bg)';
         }
       }}
       onMouseDown={(e) => {

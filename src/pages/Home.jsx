@@ -14,7 +14,7 @@ export default function Home() {
       
       <main className="main-content" style={{ maxWidth: '1200px', margin: '0 auto', paddingTop: '2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <h1 style={{ fontSize: '3rem', marginBottom: '1rem', background: 'linear-gradient(90deg, #fff, #00d2ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <h1 style={{ fontSize: '3rem', marginBottom: '1rem', background: 'linear-gradient(90deg, var(--text-main), #00d2ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Discover Top Tech Talent
           </h1>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 2rem' }}>
