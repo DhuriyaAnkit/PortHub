@@ -7,7 +7,7 @@ export function useTheme() {
 }
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('dark'); // Default to dark mode
+  const [theme, setTheme] = useState('light'); // Default to light mode
 
   useEffect(() => {
     // Check local storage for existing theme preference
@@ -16,13 +16,9 @@ export function ThemeProvider({ children }) {
       setTheme(savedTheme);
       document.documentElement.setAttribute('data-theme', savedTheme);
     } else {
-      // Check system preference
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        setTheme('light');
-        document.documentElement.setAttribute('data-theme', 'light');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
+      // Default to light if no saved preference
+      setTheme('light');
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }, []);
 
