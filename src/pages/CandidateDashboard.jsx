@@ -110,7 +110,7 @@ export default function CandidateDashboard() {
                   <Save size={16} /> Save Changes
                 </button>
               ) : (
-                <button className="glass-button" onClick={() => setIsEditing(true)} style={{ padding: '0.5rem 1rem' }}>
+                <button className="glass-button"onClick={() => setIsEditing(true)} style={{ padding: '0.5rem 1rem', color:'black' }}>
                   <Edit3 size={16} /> Edit
                 </button>
               )}

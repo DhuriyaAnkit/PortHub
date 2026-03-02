@@ -25,7 +25,7 @@ export default function Home() {
               <Link to="/signup" className="glass-button primary" style={{ textDecoration: 'none' }}>
                 Join the Network
               </Link>
-              <Link to="/login" className="glass-button" style={{ textDecoration: 'none' }}>
+              <Link to="/login" className="glass-button" style={{ textDecoration: 'none', color: 'black' }}>
                 Sign In
               </Link>
             </div>
