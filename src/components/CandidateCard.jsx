@@ -26,8 +26,8 @@ export default function CandidateCard({ candidate, isShortlisted, onToggleShortl
           alt={candidate.name} 
           style={{ width: '64px', height: '64px', borderRadius: '50%', border: '2px solid var(--primary)' }}
         />
-        <div>
-          <h3 style={{ margin: 0, fontSize: '1.1rem' }}>{candidate.name}</h3>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <h3 style={{ margin: 0, fontSize: '1.1rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{candidate.name}</h3>
           <p style={{ margin: 0, color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '100%' }}>
             {combinedRoles}
           </p>
